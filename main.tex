@@ -1,16 +1,32 @@
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{amsmath, amssymb}
-\usepackage{hyperref}
+\documentclass{article}
 
-\title{My Report}
-\author{Team}
-\date{\today}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[spanish]{babel}
+
+\addto\captionsspanish{\renewcommand{\figurename}{Fig.}}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Informe - Simulación de Sistemas - Grupo 2}
+\author{
+  Máximo Chiatellino \and
+  Nombre Apellido \and
+  Otro Nombre
+}
 
 \begin{document}
 \maketitle
 \input{sections/informe} % <- your content lives here
-\bibliographystyle{ieeetr}
-\bibliography{refs}
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
 \end{document}
