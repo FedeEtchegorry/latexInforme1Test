@@ -1,7 +1,7 @@
 name: LaTeX PDF
 on:
   push:
-    paths: ["**.tex", "**.bib", "**.sty", "**.cls", "**.png", "**.jpg", "**.pdf"]
+    paths: ["**.tex", "**.bib", "**.sty", "**.cls", "figures/**"]
   pull_request:
 jobs:
   build:
@@ -13,5 +13,5 @@ jobs:
           root_file: main.tex
       - uses: actions/upload-artifact@v4
         with:
-          name: paper-pdf
+          name: report-pdf
           path: main.pdf
